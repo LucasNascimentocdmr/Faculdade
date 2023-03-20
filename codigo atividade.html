@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exemplo de manipulação do DOM</title>
+  </head>
+  <body>
+    <h1>Exemplo de manipulação do DOM</h1>
+    <p id="texto">Clique no botão para mudar o texto.</p>
+    <button id="botao">Clique aqui</button>
+
+    <script>
+      // Seleciona o botão e o parágrafo pelo ID
+      const botao = document.querySelector("#botao");
+      const texto = document.querySelector("#texto");
+
+      // Adiciona um ouvinte de evento ao botão
+      botao.addEventListener("click", function () {
+        // Muda o conteúdo do parágrafo
+        texto.textContent = "Texto alterado!";
+      });
+    </script>
+  </body>
+</html>
